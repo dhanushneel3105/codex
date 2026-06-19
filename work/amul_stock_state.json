@@ -1,0 +1,20 @@
+{
+  "available": false,
+  "reason": "No enabled buy/add-to-cart button found.",
+  "page_title": "Amul",
+  "checked_at": "2026-06-19T17:43:12.754592+00:00",
+  "products": {
+    "amul-high-protein-wheat-flour-30": {
+      "available": true,
+      "reason": "Main product section contains add to cart without sold-out text.",
+      "page_title": "Amul High Protein Wheat Flour, 65 g | Pack of 30 Sachets",
+      "checked_at": "2026-06-19T18:22:38.912716+00:00"
+    },
+    "amul-chocolate-whey-protein-60": {
+      "available": false,
+      "reason": "Main product section says sold out/out of stock.",
+      "page_title": "Amul Chocolate Whey Protein, 34 g | Pack of 60 sachets",
+      "checked_at": "2026-06-19T18:22:57.898622+00:00"
+    }
+  }
+}
