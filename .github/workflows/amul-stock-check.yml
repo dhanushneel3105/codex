@@ -28,10 +28,17 @@ jobs:
 
       - name: Install Python dependencies
         run: python -m pip install -r work/requirements.txt
-
+  
       - name: Install Playwright Chromium
         run: python -m playwright install --with-deps chromium
 
+      - name: Debug
+        run: |
+          echo "USER_SET=$([[ -n \"$GMAIL_SMTP_USER\" ]] && echo yes || echo no)"
+          echo "PASS_SET=$([[ -n \"$GMAIL_APP_PASSWORD\" ]] && echo yes || echo no)"
+        env:
+          GMAIL_SMTP_USER: ${{ secrets.GMAIL_SMTP_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
       - name: Check Amul stock
         env:
           GMAIL_SMTP_USER: ${{ secrets.GMAIL_SMTP_USER }}
