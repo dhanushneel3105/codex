@@ -349,8 +349,8 @@ def check_stock(product: Product, headless: bool, debug_dir: str | None, pause_o
 
 
 def send_email(product: Product, status: StockStatus) -> None:
-    smtp_user = env("GMAIL_SMTP_USER")
-    smtp_password = env("GMAIL_APP_PASSWORD")
+    smtp_user = "dhanushspjimr@gmail.com"
+    smtp_password = "mulzgdbvfyexcypp"
     smtp_host = env("SMTP_HOST", "smtp.gmail.com")
     smtp_port = int(env("SMTP_PORT", "465"))
 
